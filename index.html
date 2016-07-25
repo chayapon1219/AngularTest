@@ -1,0 +1,90 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" href="App.css">
+
+</head>
+<body ng-app="MyApp" layout="column" ng-cloak>
+  <!--
+    Your HTML content here
+  -->  
+  <md-toolbar>
+ 	<h1>Angular Material Starter</h1>
+  </md-toolbar>
+
+<div class="container" layout="row" flex>
+  <md-sidenav md-is-locked-open="true" class="lightblue">Sidenav
+  </md-sidenav>
+
+  <md-content id="content" class="lightgreen" flex>Content</md-content>	
+ </div>			
+
+
+
+ <md-button class="md-fab" aria-label="Eat cake">
+            <md-icon md-svg-src="img/icons/cake.svg"></md-icon>
+        </md-button>
+
+
+
+
+
+
+
+
+
+
+<style>
+.red{background-color: red;}
+.lightblue{background-color: lightblue;}
+.lightgreen{background-color: lightgreen;}
+</style>
+
+
+
+
+
+
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('MyApp', ['ngMaterial'])
+    .run(function(){
+    	console.log('MyApp is ready!');	
+    });
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
